@@ -2,9 +2,9 @@
 Converts a Javascript userscript (```.user.js```) into a chrome extension (```.crx```)
 
 #### Required software
-[python](https://www.python.org/downloads/) - Versions 2.x or 3.x should both work
-[ffmpeg & ffprobe](https://www.ffmpeg.org/download.html) - For icon creation
-[chrome](https://www.google.com/chrome/index.html) - For .crx compilation
+<a href="https://www.python.org/downloads/" target="_blank">python</a> - Versions 2.x or 3.x should both work
+<a href="https://www.ffmpeg.org/download.html" target="_blank">ffmpeg &amp; ffprobe</a> - For icon creation
+<a href="https://www.google.com/chrome/index.html" target="_blank">chrome</a> - For .crx compilation
 
 #### Command line usage
 ```js2crx.py``` is mainly designed as a command line application. It includes a template Windows batch script ```build.bat``` which can be easily edited to auto-build a project. Simply edit the ```EDIT_THIS``` parts in it.
@@ -17,7 +17,7 @@ Executing ```js2crx.py --usage``` will list the available flags, their aliases, 
 ```js2crx.py``` should also be able to be imported as a library and executed in a similar manner to the command line version. This is untested/undocumented, but there's no real reason why it shouldn't work. If this functionality is required, reading through ```js2crx.py```'s ```main``` should give some insight.
 
 #### Userscript metadata
-Typical userscript files contain a [metadata block](http://wiki.greasespot.net/Metadata_Block) at the top of the file. To specify additional info for the ```.crx``` file, an additional ```ChromeExtension``` metadata block should follow it. Example:
+Typical userscript files contain a <a href="http://wiki.greasespot.net/Metadata_Block" target="_blank">metadata block</a> at the top of the file. To specify additional info for the ```.crx``` file, an additional ```ChromeExtension``` metadata block should follow it. Example:
 
 ```javascript
 // ==ChromeExtension==
