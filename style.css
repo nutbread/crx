@@ -216,10 +216,12 @@ a.light_nohover_color_hover:hover {
 	line-height: 1.1em;
 }
 .header_table_description_name {
+	text-transform: lowercase;
 	font-weight: bold;
 	color: #404040;
 }
 .header_table_description_body {
+	text-transform: lowercase;
 	color: #606060;
 }
 
