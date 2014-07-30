@@ -911,10 +911,10 @@ class CRXBuilder:
 		# Find update url and version
 		usmd_values = self.userscript_metadata["map"]["UserScript"][0]["value_map"];
 		cemd_values = self.userscript_metadata["map"]["ChromeExtension"][0]["value_map"];
-		if ("update-url" not in cemd_values):
-			# Nothing to do; no @update-url specified in ChromeExtension metadata
+		if ("download-url" not in cemd_values):
+			# Nothing to do; no @download-url specified in ChromeExtension metadata
 			return None;
-		update_url = cemd_values["update-url"][0][1];
+		download_url = cemd_values["download-url"][0][1];
 
 		if ("version" in usmd_values):
 			version = usmd_values["version"][0][1];
@@ -946,7 +946,7 @@ class CRXBuilder:
 			'<?xml version="1.0" encoding="UTF-8"?>',
 			'<gupdate xmlns="http://www.google.com/update2/response" protocol="2.0">',
 			'\t<app appid="{0:s}">'.format(appid),
-			'\t\t<updatecheck codebase="{0:s}" version="{1:s}" />'.format(update_url, version),
+			'\t\t<updatecheck codebase="{0:s}" version="{1:s}" />'.format(download_url, version),
 			'\t</app>',
 			'</gupdate>',
 		]);
