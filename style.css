@@ -63,6 +63,9 @@ h6 {
 	visibility: hidden;
 	opacity: 0;
 
+	-webkit-transition: color 0.25s ease-in-out 0s, opacity 0.25s ease-in-out 0s, visibility 0.25s linear 0s;
+	-moz-transition: color 0.25s ease-in-out 0s, opacity 0.25s ease-in-out 0s, visibility 0.25s linear 0s;
+	-o-transition: color 0.25s ease-in-out 0s, opacity 0.25s ease-in-out 0s, visibility 0.25s linear 0s;
 	transition: color 0.25s ease-in-out 0s, opacity 0.25s ease-in-out 0s, visibility 0.25s linear 0s;
 }
 a.hardlink {
@@ -75,6 +78,9 @@ a.hardlink {
 	color: #c8c8c8;
 	font-weight: bold;
 
+	-webkit-transition: color 0.25s ease-in-out 0s, opacity 0.25s ease-in-out 0.5s, visibility 0s linear 0.5s;
+	-moz-transition: color 0.25s ease-in-out 0s, opacity 0.25s ease-in-out 0.5s, visibility 0s linear 0.5s;
+	-o-transition: color 0.25s ease-in-out 0s, opacity 0.25s ease-in-out 0.5s, visibility 0s linear 0.5s;
 	transition: color 0.25s ease-in-out 0s, opacity 0.25s ease-in-out 0.5s, visibility 0s linear 0.5s;
 }
 a.hardlink:hover {
