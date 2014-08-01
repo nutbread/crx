@@ -48,7 +48,7 @@ set NO_PAUSE=0
 if "%1%"=="-p" set NO_PAUSE=1
 if "%1%"=="--no-pause" set NO_PAUSE=1
 
-set BUILD_BATCH_FULL_FILENAME=build.bat
+set BUILD_BATCH_FULL_FILENAME=%0
 for %%A in ("%BUILD_BATCH_FULL_FILENAME%") do (
     set BUILD_BATCH_PATH=%%~dpA
     set BUILD_BATCH_FILENAME=%%~nxA
