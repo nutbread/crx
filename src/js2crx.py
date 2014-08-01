@@ -70,7 +70,7 @@ def arguments_parse(arguments, start, descriptor, flagless_argument_order=[], st
 					if (arg in argument_aliases_long):
 						# Set
 						arg_key = argument_aliases_long[arg];
-						if (argument_values[arg_key] == False):
+						if (argument_values[arg_key] == False or argument_values[arg_key] == True):
 							# No value
 							argument_values[arg_key] = True;
 						else:
@@ -98,7 +98,7 @@ def arguments_parse(arguments, start, descriptor, flagless_argument_order=[], st
 						if (arg[i] in argument_aliases_short):
 							# Set
 							arg_key = argument_aliases_short[arg[i]];
-							if (argument_values[arg_key] == False):
+							if (argument_values[arg_key] == False or argument_values[arg_key] == True):
 								# No value
 								argument_values[arg_key] = True;
 							else:
@@ -129,7 +129,7 @@ def arguments_parse(arguments, start, descriptor, flagless_argument_order=[], st
 		elif (len(flagless_argument_order) > 0):
 			# Set
 			arg_key = flagless_argument_order[0];
-			if (argument_values[arg_key] == False):
+			if (argument_values[arg_key] == False or argument_values[arg_key] == True):
 				# No value
 				argument_values[arg_key] = True;
 			else:
