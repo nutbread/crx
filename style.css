@@ -87,6 +87,9 @@ a.hardlink:hover {
 	text-decoration: none;
 	color: #4195dc;
 }
+a.hardlink:after {
+	content: "#";
+}
 
 p+p,
 h1+p,h2+p,h3+p,h4+p,h5+p,h6+p,
