@@ -1133,13 +1133,13 @@ def main():
 	if (len(errors) > 0):
 		for e in errors:
 			sys.stderr.write("{0:s}\n".format(e));
-		sys.exit(-1);
+		return -1;
 
 
 
 	# Version
 	if (arguments["version"]):
-		sys.stdout.write("Version {0:s}".format(".".join([ str(v) for v in version_info ])));
+		sys.stdout.write("Version {0:s}\n".format(".".join([ str(v) for v in version_info ])));
 		return 0;
 
 	if (arguments["help"]):
